@@ -1,6 +1,6 @@
 {
-    "name": "vsmicrobit",
-    "displayName": "vsmicrobit",
+    "name": "microbit",
+    "displayName": "microbit",
     "description": "microbit ext for vscode",
     "version": "0.0.1",
     "publisher": "langxm",
@@ -13,7 +13,7 @@
     ],
     "repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-python"
+		"url": "https://github.com/yonghuming/microbitext4vscode"
 	},
     "activationEvents": [
         "onCommand:extension.sayHello"
