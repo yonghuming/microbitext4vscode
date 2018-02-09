@@ -1,0 +1,57 @@
+{
+    "name": "vsmicrobit",
+    "displayName": "vsmicrobit",
+    "description": "microbit ext for vscode",
+    "version": "0.0.1",
+    "publisher": "langxm",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other",
+		"Snippets"
+    ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-python"
+	},
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "snippets": [
+			{
+				"language": "python",
+				"path": "./snippets/python.json"
+			}
+		],
+		
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "flash"
+            }
+            
+        ],
+        "keybindings": [
+			{
+				"command": "extension.sayHello",
+				"key": "F2",
+				"when": "editorFocus && !replaceActive && !searchViewletVisible && !findWidgetVisible"
+			}
+		]
+		
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.6.1",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}

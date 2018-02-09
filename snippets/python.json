@@ -1,0 +1,13 @@
+{
+	
+	"microbit": {
+			"prefix": "microbit",
+			"body": [
+				"# Micro:bit extension for Visual Code by langxm\n",
+				"from microbit import *\nimport music\n",
+				"while True:",
+				"    $0"
+			],
+			"description": "Micro:bit代码模板"
+		}
+	}
