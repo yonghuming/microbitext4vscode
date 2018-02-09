@@ -2,7 +2,7 @@
     "name": "microbit",
     "displayName": "microbit",
     "description": "microbit ext for vscode",
-    "version": "0.0.1",
+    "version": "0.3.0",
     "publisher": "langxm",
     "engines": {
         "vscode": "^1.19.0"
@@ -12,40 +12,37 @@
     },
     "categories": [
         "Other",
-		"Snippets"
+        "Snippets"
     ],
     "repository": {
-		"type": "git",
-		"url": "https://github.com/yonghuming/microbitext4vscode"
+        "type": "git",
+        "url": "https://github.com/yonghuming/microbitext4vscode"
     },
-    "icon": "./images/4.png",
+    "icon": "images/4.png",
     "activationEvents": [
         "onCommand:extension.sayHello"
     ],
     "main": "./extension",
     "contributes": {
         "snippets": [
-			{
-				"language": "python",
-				"path": "./snippets/python.json"
-			}
-		],
-		
+            {
+                "language": "python",
+                "path": "./snippets/python.json"
+            }
+        ],
         "commands": [
             {
                 "command": "extension.sayHello",
                 "title": "flash"
             }
-            
         ],
         "keybindings": [
-			{
-				"command": "extension.sayHello",
-				"key": "F2",
-				"when": "editorFocus && !replaceActive && !searchViewletVisible && !findWidgetVisible"
-			}
-		]
-		
+            {
+                "command": "extension.sayHello",
+                "key": "F2",
+                "when": "editorFocus && !replaceActive && !searchViewletVisible && !findWidgetVisible"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
