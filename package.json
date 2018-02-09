@@ -7,6 +7,9 @@
     "engines": {
         "vscode": "^1.19.0"
     },
+    "author": {
+        "name": "langxm"
+    },
     "categories": [
         "Other",
 		"Snippets"
@@ -14,7 +17,8 @@
     "repository": {
 		"type": "git",
 		"url": "https://github.com/yonghuming/microbitext4vscode"
-	},
+    },
+    "icon": "./images/4.png",
     "activationEvents": [
         "onCommand:extension.sayHello"
     ],
